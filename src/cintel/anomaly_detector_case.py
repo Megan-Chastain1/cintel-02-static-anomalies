@@ -1,7 +1,7 @@
 """
 anomaly_detector_case.py - Project script (example).
 
-Author: Denise Case
+Author: Denise Case, Megan Chastain
 Date: 2026-03-07
 
 Static Data
