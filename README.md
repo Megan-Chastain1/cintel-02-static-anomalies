@@ -131,3 +131,14 @@ git push -u origin main
 
 - Use the **UP ARROW** and **DOWN ARROW** in the terminal to scroll through past commands.
 - Use `CTRL+f` to find (and replace) text within a file.
+
+## Updates
+- Edit a copy of the dataset and name it with your name
+- Run the new dataset through the module script
+- Analyze the differences
+- Change/Add min for MAX so the code reads:
+  x is age in years, so 18 is the lower limit for adults
+    MIN_REASONABLE_X_VALUE: Final[float] = 18.0
+ LOG.info(f"MIN_REASONABLE_X_VALUE: {MIN_REASONABLE_X_VALUE} in years")
+ anomalies_df: pl.DataFrame = df.filter(
+        (pl.col("age_years") < MIN_REASONABLE_X_VALUE)
